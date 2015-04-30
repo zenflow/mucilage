@@ -13,6 +13,8 @@
     "architecture"
   ],
   "main": "lib/Mucilage.js",
+  "scripts": {
+  },
   "author": {
     "name": "Matthew Francis Brunetti",
     "email": "zenflow87@gmail.com"
@@ -23,9 +25,13 @@
     "url": "https://github.com/zenflow/mucilage"
   },
   "dependencies": {
-    "async": "^0.9.0",
     "connect": "^3.3.5",
-    "lodash": "^3.6.0"
+    "es6-promises": "^1.0.10",
+    "lodash": "^3.7.0"
+  },
+  "devDependencies": {
+    "tap-spec": "^3.0.0",
+    "tape": "^4.0.0"
   },
   "browser": {
     "./lib/Mucilage.js": "./lib/Mucilage.client.js"
