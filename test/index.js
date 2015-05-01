@@ -4,10 +4,10 @@ var m_dummy = require('./dummy');
 
 test('a', function(t) {
 	t.plan(1);
-	var mucilage, dummy_promise;
+	var m, dummy_promise;
 	try {
-		mucilage = new Mucilage;
-		dummy_promise = mucilage.load(m_dummy);
+		m = new Mucilage;
+		dummy_promise = m.load(m_dummy);
 	} catch (error) {
 		return t.fail(error);
 	}
